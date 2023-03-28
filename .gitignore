@@ -1,0 +1,8 @@
+**/target
+**/*.rs.bk
+Cargo.lock
+
+.vscode
+.cache
+.vs
+.DS_Store

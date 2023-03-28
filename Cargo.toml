@@ -1,0 +1,11 @@
+[package]
+name = "file-picker-android"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = "1.0"
+tauri = "2.0.0-alpha.4"
+
+[build-dependencies]
+tauri-build = "2.0.0-alpha.2"
