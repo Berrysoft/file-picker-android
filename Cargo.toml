@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 serde = "1.0"
-tauri = "2.0.0-alpha.4"
+tauri = "2.0.0-alpha.6"
 
 [build-dependencies]
-tauri-build = "2.0.0-alpha.2"
+tauri-build = "2.0.0-alpha.3"
