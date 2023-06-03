@@ -2,6 +2,7 @@
 name = "file-picker-android"
 version = "0.1.1"
 edition = "2021"
+links = "file-picker-android"
 
 [dependencies]
 serde = "1"
