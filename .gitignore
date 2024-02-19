@@ -6,3 +6,5 @@ Cargo.lock
 .cache
 .vs
 .DS_Store
+
+/permissions/

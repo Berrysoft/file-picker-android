@@ -1,6 +1,5 @@
 fn main() {
-    tauri_build::mobile::PluginBuilder::new()
+    tauri_plugin::Builder::new(&["pickFiles"])
         .android_path("android")
-        .run()
-        .unwrap();
+        .build();
 }

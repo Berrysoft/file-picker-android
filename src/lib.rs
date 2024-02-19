@@ -8,12 +8,9 @@ use tauri::{
 pub fn init<R: Runtime>() -> TauriPlugin<R> {
     Builder::new("file-picker-android")
         .setup(|app, api| {
-            #[cfg(target_os = "android")]
-            {
-                let handle =
-                    api.register_android_plugin("com.plugin.berrysoft.picker", "PickerPlugin")?;
-                app.manage(PickerPlugin(handle));
-            }
+            let handle =
+                api.register_android_plugin("com.plugin.berrysoft.picker", "PickerPlugin")?;
+            app.manage(PickerPlugin(handle));
             Ok(())
         })
         .build()
