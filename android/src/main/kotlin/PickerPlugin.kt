@@ -20,7 +20,6 @@ import kotlin.math.min
 class PickerPlugin(private val activity: Activity): Plugin(activity) {
     @Command
     fun pickFiles(invoke: Invoke) {
-        val value = invoke.getArray("extensions")?.toList<String>()
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.addCategory(Intent.CATEGORY_OPENABLE)
         intent.setType("*/*")
